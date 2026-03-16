@@ -2,7 +2,6 @@
 
 A small Knowledge-Based System that helps students figure out which courses they can take and what to study next, based on their completed courses and prerequisite rules.
 
----
 
 ## Ontology
 
@@ -13,14 +12,12 @@ A small Knowledge-Based System that helps students figure out which courses they
 - `completed(Student → Course)` — a student has finished a course
 - `eligibleFor(Student → Course)` — **inferred** automatically (never entered manually)
 
----
 
 ## Inference Logic
 
 - **Can a student take a course?** The system finds all prerequisites (including transitive ones) and checks if the student has completed them all. If not, it returns what's missing.
 - **What should a student take next?** The system checks every course, filters out completed ones, and returns eligible courses sorted alphabetically.
 
----
 
 ## Repo Structure
 
@@ -33,7 +30,6 @@ A small Knowledge-Based System that helps students figure out which courses they
     └── test_kbs.py # Unit tests
 ```
 
----
 
 ## How to Run
 
@@ -42,7 +38,6 @@ python demo.py
 python -m unittest
 ```
 
----
 
 ## Example Output
 
